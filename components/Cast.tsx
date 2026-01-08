@@ -1,32 +1,30 @@
 
 import React from 'react';
-import { CAST } from '../constants';
+import { CAST } from '../constants.tsx';
 
 export const Cast: React.FC = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-[#050505] to-[#0a001a]">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-cinzel mb-4 text-white">The Faces</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-magenta-500 mx-auto shadow-[0_0_10px_rgba(0,242,255,0.4)]"></div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {CAST.map((member) => (
-            <div key={member.id} className="group flex flex-col items-center text-center">
-              <div className="relative mb-6 overflow-hidden rounded-sm w-full aspect-[4/5] border border-cyan-500/20 group-hover:border-cyan-500/50 transition-all duration-500">
+    <section className="py-40 px-6 bg-black">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-[10px] tracking-[0.5em] uppercase text-zinc-500 mb-20 text-center">Principals</h2>
+        
+        <div className="space-y-32">
+          {CAST.map((member, idx) => (
+            <div key={member.id} className={`flex flex-col md:flex-row items-center gap-16 ${idx % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+              <div className="w-full md:w-1/2 aspect-[4/5] bg-zinc-900 overflow-hidden border border-white/5">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="w-full h-full object-cover filter contrast-125 transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 border-[10px] border-black/20 group-hover:border-cyan-500/10 transition-all"></div>
               </div>
-              <h3 className="text-2xl font-cinzel mb-1 text-white group-hover:text-cyan-400 transition-colors">{member.name}</h3>
-              <p className="text-magenta-400 uppercase tracking-widest text-sm mb-4 font-bold">{member.role}</p>
-              <p className="text-gray-400 text-sm leading-relaxed px-4 group-hover:text-white transition-colors">
-                {member.description}
-              </p>
+              <div className="w-full md:w-1/2 text-center md:text-left">
+                <span className="text-[9px] uppercase tracking-[0.5em] text-cyan-500 mb-4 block font-bold">{member.role}</span>
+                <h3 className="text-4xl font-cinzel tracking-widest mb-6">{member.name.toUpperCase()}</h3>
+                <p className="text-xs text-zinc-400 leading-relaxed tracking-widest uppercase">
+                  {member.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

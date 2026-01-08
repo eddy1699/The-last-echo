@@ -17,30 +17,42 @@ export const CAST: CastMember[] = [
     id: "1",
     name: "Elena Vance",
     role: "Maya",
-    image: "https://picsum.photos/seed/elena/400/500",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800&h=1000",
     description: "Known for her subtle emotional depth, Elena brings Maya's isolation to life."
   },
   {
     id: "2",
     name: "Marcus Thorne",
     role: "The Voice",
-    image: "https://picsum.photos/seed/marcus/400/500",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800&h=1000",
     description: "A haunting performance that challenges everything Maya believes."
   },
   {
     id: "3",
     name: "Sarah Chen",
     role: "Commander Zhang",
-    image: "https://picsum.photos/seed/sarah/400/500",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800&h=1000",
     description: "The strict authority figure connecting Maya to the world she left behind."
   }
 ];
 
 export const STILLS: FilmStill[] = [
-  { url: "https://picsum.photos/seed/film1/1200/600", caption: "The Radio Tower" },
-  { url: "https://picsum.photos/seed/film2/1200/600", caption: "The Mysterious Signal" },
-  { url: "https://picsum.photos/seed/film3/1200/600", caption: "A Moment of Reflection" },
-  { url: "https://picsum.photos/seed/film4/1200/600", caption: "The Final Stand" }
+  { 
+    url: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=1920", 
+    caption: "The Radio Tower" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920", 
+    caption: "The Mysterious Signal" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&q=80&w=1920", 
+    caption: "A Moment of Reflection" 
+  },
+  { 
+    url: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=1920", 
+    caption: "The Final Stand" 
+  }
 ];
 
 export const AWARDS: Award[] = [
