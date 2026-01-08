@@ -1,0 +1,7 @@
+{
+  "name": "Cinematica: The Last Echo",
+  "description": "A premium landing page for an independent short film called 'The Last Echo', featuring a cinematic UI, trailer gallery, cast highlights, and an interactive AI story assistant powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
